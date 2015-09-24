@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
 	var toAdd = $('input[name=checkListItem]').val();
-        $(".items").append("<h3>" + toAdd + "</h3>");
+        $(".items").append("<div class='list'><h3>" + toAdd + "</h3></div>");
 
 
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
  $(document).on('click', 'h3', function(){
         
-        $(this).remove();
+        $(this).parent().remove();
     });
 
 });
